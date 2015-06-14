@@ -1,0 +1,5 @@
+cmake_minimum_required(VERSION 2.8)
+project( desktop_main )
+find_package( OpenCV REQUIRED )
+add_executable( desktop_main desktop_main.cpp faceModes.cpp)
+target_link_libraries( desktop_main ${OpenCV_LIBS} )
